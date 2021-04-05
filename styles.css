@@ -219,7 +219,7 @@ section .cards .text-card p {
 }
 
 .navbar ul li a:hover {
-  font-size: 20px;
+  font-weight: 800;
 }
 
 html {
