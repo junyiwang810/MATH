@@ -194,7 +194,6 @@ section .cards .text-card p {
   display: flex;
   width: 100%;
   height: 60px;
-  background: white;
 }
 
 .navbar ul {
@@ -209,8 +208,8 @@ section .cards .text-card p {
 }
 
 .navbar ul li {
-  margin: 0 1rem;
-  padding: 1rem;
+  margin: 0 1.5rem;
+  padding: 3rem 0;
 }
 
 .navbar ul li a {
@@ -220,7 +219,7 @@ section .cards .text-card p {
 }
 
 .navbar ul li a:hover {
-  color: #b6b6b6;
+  font-size: 20px;
 }
 
 html {
@@ -257,5 +256,19 @@ html {
           transform: rotate(45deg);
   border-top: transparent;
   border-left: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #ffffff;
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #06dee1, #ffbf6c);
+  border-radius: 3px;
 }
 /*# sourceMappingURL=styles.css.map */
