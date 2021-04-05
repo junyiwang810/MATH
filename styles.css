@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section:nth-child(1) {
+  color: #fff;
+}
+
+section:nth-child(2) {
+  color: #1D212B;
+  background: #fff;
+}
+
+section:nth-child(3) {
+  color: #1D212B;
+  background: #fff;
+  text-align: center;
+}
+
+section:nth-child(4) {
+  color: #1D212B;
+  background: #fff;
+}
+
+section .container {
+  margin: auto;
+}
+
+section h1 {
+  font-size: 200px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.scroll {
+  font-size: 40px;
+  text-align: center;
+}
+
+section .cards {
+  display: block;
+  width: 25cm;
+}
+
+section .cards .text-card {
+  background: #25a8fa;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 10px lightgray;
+          box-shadow: 5px 10px 10px lightgray;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 40px;
+  }
+  section .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+section .cards .text-card p {
+  font-size: 20px;
+}
+
+.example {
+  text-align: center;
+  font-size: 25cm;
+}
+
+.answer {
+  font-size: 30px;
+}
+
+.but {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.but button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #383838;
+  border-radius: 10px;
+}
+
+.but a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  position: relative;
+}
+
+.but1 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.but1 button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #383838;
+  border-radius: 10px;
+}
+
+.but1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  /* overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: white;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.navbar ul li a:hover {
+  color: #b6b6b6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sub {
+  background: linear-gradient(45deg, #23d5ab, #23a6d5);
+}
+
+.scrolling {
+  height: 90px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scrolling::before,
+.scrolling::after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 28%;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  -webkit-transform: translate(-50, -50);
+          transform: translate(-50, -50);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+}
+/*# sourceMappingURL=styles.css.map */

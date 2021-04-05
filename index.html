@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="MATH (2).png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Adding">Addition</a></li>
+                <li><a href="#Subtraction">Subtraction</a></li>
+                <li><a href="#Multi">Multiplication</a></li>
+                <li><a href="#Divide">Division</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="title">
+        <section id="home">
+            <h1>Math<br>
+                <div class="scroll">Scroll down 👇</div>
+            </h1>
+            <a href="#Adding"><div class="scrolling"></div></a>
+        </section>
+    </div>
+
+    <section id="Adding" class="add">
+        <div class="container reveal">
+            <h2>Adding</h2>
+            <div class="cards">
+                <div class="text-card">
+                    <h3>1) what is it?</h3>
+                    <p>To bring two or more numbers (or things) together to make a new total.</p>
+                </div>
+                <div class="text-card">
+                    <h3>2) Example</h3>
+                    <div class="example"><p>🍎(1) + 🍎(1) = 🍎🍎(2)</p></div>
+                </div>
+                <div class="text-card">
+                    <h3>3) Practice</h3>
+                    <div class="but"><button><a href="https://www.mathsisfun.com/worksheets/ws.html?op=add&n=10&amin=1&amax=4&bmin=1&bmax=4&ol=y" target="_blank">Click here to practice</a></button></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="Subtraction" class="sub">
+        <div class="container reveal">
+            <h2>Subtraction</h2>
+            <div class="cards">
+                <div class="text-card">
+                    <h3>1) what is it?</h3>
+                    <p>The process or skill of taking one number or amount away from another. </p>
+                </div>
+                <div class="text-card">
+                    <h3>2) Example</h3>
+                    <div class="example">
+                        <p>🍎🍎(2) - 🍎(1) = 🍎(1)</p>
+                    </div>
+                </div>
+                <div class="text-card">
+                    <h3>3) Practice</h3>
+                    <div class="but1"><button><a href="https://www.mathsisfun.com/worksheets/ws.html?op=sub&n=10&amin=1&amax=5&bmin=1&bmax=5&negans=n&ol=y" target="_blank">Click here to practice</a></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Multi" class="multi">
+        <div class="container reveal">
+            <h2>Multiplication</h2>
+            <div class="cards">
+                <div class="text-card">
+                    <h3>1) what is it?</h3>
+                    <p>To multiply numbers is to add groups of a number. Multiplying means repeated addition of a number.</p>
+                </div>
+                <div class="text-card">
+                    <h3>2) Example</h3>
+                    <div class="example">
+                        <p>🍎🍎(2) × 🍎🍎(2) = 🍎🍎🍎🍎(4)</p>
+                    </div>
+                </div>
+                <div class="text-card">
+                    <h3>3) Practice</h3>
+                    <div class="but"><button><a
+                                href="https://www.mathsisfun.com/worksheets/ws.html?op=mult&n=20&amin=1&amax=4&bmin=1&bmax=4&ol=y"
+                                target="_blank">Click here to practice</a></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Divide" class="div">
+        <div class="container reveal">
+            <h2>Division</h2>
+            <div class="cards">
+                <div class="text-card">
+                    <h3>1) what is it?</h3>
+                    <p>The action of separating something into parts or the process of being separated.</p>
+                </div>
+                <div class="text-card">
+                    <h3>2) Example</h3>
+                    <div class="example">
+                        <p>🍎🍎🍎🍎(4) ÷ 🍎🍎(2) = 🍎🍎(2)</p>
+                    </div>
+                </div>
+                <div class="text-card">
+                    <h3>3) Practice</h3>
+                    <div class="but"><button><a
+                                href="https://www.mathsisfun.com/worksheets/ws.html?op=div&n=15&amin=1&amax=4&bmin=1&bmax=4&ol=y"
+                                target="_blank">Click here to practice</a></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        function myfunction() {
+            input = document.querySelector('[name="answer"]').value
+            if(input == 2){
+                document.getElementById("demo").innerHTML = "Congrats you got it! The answer was 2";
+            }
+            console.log(input)
+        }
+    </script>
+
+</body>
+</html>
