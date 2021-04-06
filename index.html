@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="MATH (2).png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a83000a323.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="all.min.css">
 </head>
 <body>
     <div class="nav_container">
@@ -116,8 +117,12 @@
                                 target="_blank">Click here to practice</a></button></div>
                 </div>
             </div>
+            
         </div>
     </section>
+    <a href="#" class="to-top">
+        ▲
+    </a>
     <script type="text/javascript">
         window.addEventListener('scroll', reveal);
 
@@ -138,13 +143,15 @@
                 }
             }
         }
-        function myfunction() {
-            input = document.querySelector('[name="answer"]').value
-            if(input == 2){
-                document.getElementById("demo").innerHTML = "Congrats you got it! The answer was 2";
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
             }
-            console.log(input)
-        }
+        })
     </script>
 
 </body>
